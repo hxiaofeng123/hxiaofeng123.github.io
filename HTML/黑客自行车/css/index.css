@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.f1 {
+    float: left;
+}
+.fr {
+    float: right;
+}
+a {
+    text-decoration: none;
+}
+ul,ol {
+    list-style-type: none;
+}
+.auto-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

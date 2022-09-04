@@ -1,0 +1,292 @@
+.box {
+    width: 100%;
+    height: 100%;
+    background: url(../images/backg.png) no-repeat 0 0/100%;
+}
+
+/* 头部  */
+header {
+    width: 100%;
+    height: 135px;
+    margin-top: 10px;
+    background-color: #283326;
+}
+header .container {
+    width: 1210px;
+    height: 100%;
+    margin: 0 auto;
+}
+header .container>.head-left {
+    width: 230px;
+    height: 100%;
+    background: url(../images/index-logo.png) no-repeat 0 0/100%;
+}
+header .container>nav {
+    width: 785px;
+    height: 100%;
+    padding-top: 80px;
+    padding-left: 130px;
+    color: #4f5122;
+}
+header .container>nav li {
+    padding: 0 27px;
+    border-right: 1px solid #4f5122;
+}
+header .container>nav li a {
+    color: #4f5122;
+}
+header .container>nav li:first-of-type {
+    background: url(../images/vuan.png) no-repeat -15px -10px/150%;
+}
+header .container>nav li:first-of-type a {
+    color: #d2d46c;
+}
+header .container>nav li:last-of-type {
+    border: 0;
+}
+header .container>.head-right {
+    width: 190px;
+    height: 100%;
+    padding-top: 45px;
+}
+header .container>.head-right>.head-r-top1 {
+    width: 100%;
+    position: relative;
+}
+header .container>.head-right>.head-r-top1 li a{
+    padding: 0 26px 0;
+    color: #4f5122;
+}
+header .container>.head-right>.head-r-top1 li a:last-of-type {
+    padding-right: 0;
+}
+header .container>.head-right>.head-r-bottom1 li {
+    margin-top: 10px;
+}
+header .container>.head-right>.head-r-bottom1 li a {
+    font-size: 14px;
+    color: #4f5122;
+}
+header .container>.head-right>.head-r-bottom1 li:last-of-type {
+    border-right: 1px solid #4f5122;
+}
+
+
+/* 横幅 */
+.banner {
+    width: 100%;
+    height: 575px;
+    margin-top: 20px;
+    background: url(../images/bannerBar01.png) no-repeat 0 0 /100%;
+}
+.banner .container {
+    width: 340px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 500px;
+}
+.banner .container>ul {
+    width: 100%;
+    height: 30px;
+}
+.banner .container>ul>li {
+    width: 30px;
+    margin-right: 45px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    background-color: #373033;
+    border-radius: 10px;
+}
+.banner .container>ul>li:first-of-type{
+    background-color: white;
+}
+.banner .container>ul>li:last-of-type {
+    margin: 0;
+}
+
+
+/* 主体 */
+main {
+    width: 100%;
+    height: 800px;
+}
+main .container {
+    width: 1210px;
+    height: 100%;
+    margin: 0 auto;
+}
+main .container>.main-top1 {
+    width: 215px;
+    height: 105px;
+    margin: 0 auto;
+    margin-top: -5px;
+    background: url(../images/logo-cen.png) no-repeat 0 0/100%;
+}
+main .container>.main-center1 {
+    width: 570px;
+    margin: 0 auto;
+    margin-top: 60px;
+    overflow: hidden;
+}
+main .container>.main-center1>ul>li {
+    width: calc(100% / 6);
+    color: #faf9bc;
+    text-align: center;
+    border-right: 2px solid #faf9bc;
+}
+main .container>.main-center1>ul>li:first-of-type {
+    color: #000;
+}
+main .container>.main-center1>ul>li:last-of-type {
+    border: 0;
+}
+main .container>.main-bottom1 {
+    width: 100%;
+    height: 450px;
+    margin-top: 55px;
+    color: white;
+    font-size: 15px;
+}
+main .container>.main-bottom1>.bottom-left1 {
+    width: 270px;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(00, 00, 00, .2);
+    padding-top: 30px;
+}
+main .container>.main-bottom1>.bottom-left1>.bottom-left1-img {
+    width: 100%;
+    height: 225px;
+    margin-top: 30px;
+    padding: 0 5px 2px;
+    opacity: 1;
+    background: url(../images/canp\ \(2\).png) no-repeat 0 0/100%;
+}
+main .container>.main-bottom1>.bottom-left1>h4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+main .container>.main-bottom1>.bottom-left2 {
+    width: 300px;
+    height: 100%;
+    margin-left: 20px;
+}
+main .container>.main-bottom1>.bottom-left2>.left2-top {
+    width: 100%;
+    height: 215px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 1;
+    background: url(../images/canp\ \(1\).png) no-repeat 0 0/100%;
+}
+main .container>.main-bottom1>.bottom-left2>.left2-bottom {
+    width: 100%;
+    height: 195px;
+    opacity: 1;
+    background:url(../images/canp\ \(5\).png) no-repeat 0 0/100%;
+}
+main .container>.main-bottom1>.bottom-left2 h3 {
+    text-align: center;
+}
+main .container>.main-bottom1>.bottom-left2 h3 {
+    margin-top: 10px;
+}
+main .container>.main-bottom1>.bottom-left3 {
+    width: 310px;
+    height: 460px;
+    margin-left: 40px;
+    color: #000;
+    font-size: 14px;
+}
+main .container>.main-bottom1>.bottom-left3>.left3-top {
+    width: 100%;
+    height: 190px;
+    margin-top: 5px;
+    background:url(../images/canp\ \(3\).png) no-repeat 0 0/100%;
+}
+main .container>.main-bottom1>.bottom-left3>.left3-bottom {
+    width: 100%;
+    height: 220px;
+    margin-top: 40px;
+    background:url(../images/canp\ \(6\).png) no-repeat 0 0/100%;
+}
+main .container>.main-bottom1>.bottom-left3>.left3-top>h3 {
+    text-indent: 1em;
+    padding-top: 5px;
+}
+main .container>.main-bottom1>.bottom-left3>.left3-top>.h3-top {
+    text-indent: 2em;
+}
+main .container>.main-bottom1>.bottom-left3>.left3-bottom>h3 {
+    text-indent: 2rem;
+    padding-top: 5px;
+}
+main .container>.main-bottom1>.bottom-left4 {
+    width: 240px;
+    height: 100%;
+    padding-top: 20px;
+    background-color: rgba(00, 00, 00, .2);
+}
+main .container>.main-bottom1>.bottom-left4>.left4-top{
+    width: 200px;
+    height: 355px;
+    margin: 0 auto;
+    background: url(../images/canp\ \(4\).png) no-repeat 0 0/100%;
+}
+main .container>.main-bottom1>.bottom-left4>.left4-bottom h3 {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+/* 页尾 */
+footer {
+    width: 100%;
+    height: 150px;
+    padding-top: 20px;
+}
+footer .container {
+    width: 1210px;
+    height: 100%;
+    margin: 0 auto;
+    color: #5e5f20;
+}
+footer .container>.f-top1{
+    width: 525px;
+    height: 20px;
+    margin: 0 auto;
+}
+footer .container>.f-top1>ul>li {
+    width: 105px;
+    text-align: center;
+    border-right: 1px solid #5e5f20;
+}
+footer .container>.f-top1>ul>li:last-of-type {
+    border: 0;
+}
+footer .container>.f-top1>ul>li>a {
+    color: #5e5f20;
+}
+footer .container>.f-center1 {
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+footer .container>.f-center1>ul>li {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 5px;
+    border-right: 1px solid #5e5f20;
+}
+footer .container>.f-center1>ul>li:last-of-type {
+    border: 0;
+}
+footer .container>.f-bottom1 {
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 12px;
+}

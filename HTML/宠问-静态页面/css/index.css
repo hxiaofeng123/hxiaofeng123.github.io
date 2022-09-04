@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 50px;
+}
+p {
+    font-size: 18px;
+}
+.box {
+    width: 100%;
+    height: 100%;
+}
+.box>.item1 {
+    width: 100%;
+    height: 640px;
+    background: #e5e3e3 url(../images/宠问_02.png) no-repeat 0 60px/100% 580px;
+}
+
+.box>.item2 {
+    width: 100%;
+    height: 1220px;
+    padding-top: 1px;
+}
+.box>.item2>.container {
+    width: 1133px;
+    height: 1340px;
+    margin: 0 auto;
+}
+.box>.item2>.container>.top {
+    width: 100%;
+    height: 380px;
+    margin-top: -121px;
+    padding: 70px 90px 0 66px;
+    background-color: #ed8da8;
+    color: white;
+}
+
+.box>.item2>.container>.top>p:first-of-type {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.box>.item2>.container>.center {
+    width: 100%;
+    height: 390px;
+    padding-top: 112px;
+}
+.box>.item2>.container>.center>h1 {
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+.box>.item2>.container>.bottom {
+    width: 100%;
+    height: 450px;
+    display: flex;
+}
+.box>.item2>.container>.bottom>div {
+    width: calc(100% / 2);
+    height: 100%;
+}
+.box>.item2>.container>.bottom>div:first-of-type {
+    background: url(../images/宠问_05.png) no-repeat;
+}
+.box>.item2>.container>.bottom>div:last-of-type {
+    background: url(../images/宠问_06.png) no-repeat;
+}
+
+
+.box>.item3 {
+    width: 100%;
+    height: 1076px;
+    background-color: #f7f7f7;
+}
+.box>.item3>.container {
+    width: 1133px;
+    height: 100%;
+    margin: 0 auto;
+}
+.box>.item3>.container>.top {
+    width: 100%;
+    height: 438px;
+    padding-top: 118px;
+}
+.box>.item3>.container>.top>h1 {
+    text-align: center;
+    margin-bottom: 34px;
+}
+.box>.item3>.container>.bottom {
+    width: 100%;
+    height: 638px;
+    display: flex;
+}
+.box>.item3>.container>.bottom>div {
+    width: calc(100% / 2);
+    height: 100%;
+}
+.box>.item3>.container>.bottom>div:first-of-type {
+    background: url(../images/宠问_09.png) no-repeat;
+}
+.box>.item3>.container>.bottom>div:last-of-type {
+    background: url(../images/宠问_10.png) no-repeat;
+}
+
+
+.box>.item4 {
+    width: 100%;
+    height: 960px;
+    background: url(../images/宠问_14.png) no-repeat 0 0/100% 960px;
+}
+.box>.item4>.container {
+    width: 1133px;
+    height: 100%;
+    margin: 0 auto;
+}
+.box>.item4>.container>.top {
+    width: 100%;
+    height: 422px;
+    color: white;
+    padding-top: 116px;
+}
+.box>.item4>.container>.top>h1 {
+    text-align: center;
+    padding-bottom: 34px;
+}
+.box>.item4>.container>.bottom {
+    width: 100%;
+    height: 538px;
+    display: flex;
+    justify-content: center;
+}
+.box>.item4>.container>.bottom>div {
+    width: 638px;
+    height: 100%;
+    background: url(../images/宠问_13.png) no-repeat 0 0/638px 100%;
+}
+
+
+.box>.item5 {
+    width: 100%;
+    height: 1212px;
+}
+.box>.item5>.container {
+    width: 1133px;
+    height: 100%;
+    margin: 0 auto;
+}
+.box>.item5>.container>.top {
+    width: 100%;
+    height: 484px;
+    padding-top: 118px;
+}
+.box>.item5>.container>.top>h1 {
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.box>.item5>.container>.bottom {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+.box>.item5>.container>.bottom>div {
+    width: 340px;
+    height: 100%;
+}
+.box>.item5>.container>.bottom>div:nth-child(1){
+    background: url(../images/宠问_17.png) no-repeat 0 0/100% 100%;
+}
+.box>.item5>.container>.bottom>div:nth-child(2){
+    background: url(../images/宠问_19.png) no-repeat 0 0/100% 100%;
+}
+.box>.item5>.container>.bottom>div:nth-child(3){
+    background: url(../images/宠问_21.png) no-repeat 0 0/100% 100%;
+}
+
+.box>.item6 {
+    width: 100%;
+    height: 936px;
+    background: url(../images/宠问_26.png) no-repeat 0 0/100% 100%;
+}
+
+.box>.item7 {
+    width: 100%;
+    height: 906px;
+    background-color: #ed8da8;
+    overflow: hidden;
+}
+.box>.item7>.container {
+    width: 1133px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.box>.item7>.container>.top {
+    width: 100%;
+    height: 336px;
+    color: white;
+    padding-top: 116px;
+}
+.box>.item7>.container>.top>h1 {
+    text-align: center;
+    margin-bottom: 34px;
+}
+.box>.item7>.container>.bottom {
+    width: 100%;
+    height: 570px;
+}
+.box>.item7>.container>.bottom>.bottom1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.box>.item7>.container>.bottom>.bottom1>div {
+    width: 430px;
+    height: 100%;
+    background: url(../images/宠问_29.png) no-repeat;
+}
+.box>.item7>.container>.bottom>.bottom2 {
+    width: 100%;
+    height: 100%;
+    padding-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+
+}
+.box>.item7>.container>.bottom>.bottom2>div {
+    width: 357px;
+    height: 100%;
+}
+.box>.item7>.container>.bottom>.bottom2>div:first-of-type{
+    background: url(../images/宠问_32.png) no-repeat;
+}
+.box>.item7>.container>.bottom>.bottom2>div:last-of-type{
+    background: url(../images/宠问_33.png) no-repeat;
+}
+
+
+.box>.item8 {
+    width: 100%;
+    height: 1056px;
+}
+.box>.item8>.container {
+    width: 1133px;
+    height: 100%;
+    margin: 0 auto;
+}
+.box>.item8>.container>.top {
+    width: 100%;
+    height: 380px;
+    padding-top: 116px;
+}
+.box>.item8>.container>.top>h1 {
+    text-align: center;
+    padding-bottom: 34px;
+}
+.box>.item8>.container>.bottom {
+    width: 100%;
+    height: 560px;
+    display: flex;
+    justify-content: center;
+}
+.box>.item8>.container>.bottom>.container1 {
+    width: 886px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+.box>.item8>.container>.bottom>.container1>div {
+    width: 102px;
+    height: 102px;
+    border: 1px dashed black;
+    margin: 38px 55px;
+}
+.box>.item8>.container>.bottom>.container1>div:nth-child(1) {
+    background: url(../images/imgs.png) no-repeat 5px -45px/400%;
+}
+
+.box>.item8>.container>.bottom>.container1>div:nth-child(2) {
+    background: url(../images/imgs.png) no-repeat 5px -149px/400%;
+}
+.box>.item8>.container>.bottom>.container1>div:nth-child(3) {
+    background: url(../images/imgs.png) no-repeat 5px -259px/400%;
+}
+.box>.item8>.container>.bottom>.container1>div:nth-child(4) {
+    background: url(../images/imgs.png) no-repeat 5px -360px/400%;
+}
+.box>.item8>.container>.bottom>.container1>div:nth-child(5) {
+    background: url(../images/imgs.png) no-repeat -105px -45px/400%;
+}
+.box>.item8>.container>.bottom>.container1>div:nth-child(6) {
+    background: url(../images/imgs.png) no-repeat -105px -145px/400%;
+}
+.box>.item8>.container>.bottom>.container1>div:nth-child(7) {
+    background: url(../images/imgs.png) no-repeat -105px -260px/400%;
+}
+.box>.item8>.container>.bottom>.container1>div:nth-child(8) {
+    background: url(../images/imgs.png) no-repeat -100px -362px/400%;
+}
+.box>.item8>.container>.bottom>.container1>div:nth-child(9) {
+    background: url(../images/imgs.png) no-repeat 10px -475px/400%;
+}
+.box>.item8>.container>.bottom>.container1>div:nth-child(10) {
+    background: url(../images/imgs.png) no-repeat -115px -487px/411%;
+}
+.box>.item8>.container>.bottom>.container1>div:nth-child(11) {
+    background: url(../images/imgs.png) no-repeat -275px -102px/400%;
+}
+.box>.item8>.container>.bottom>.container1>div:nth-child(12) {
+    background: url(../images/imgs.png) no-repeat -275px -208px/400%;
+}
+
+
+.box>.item9 {
+    width: 100%;
+    height: 930px;
+    background: url(../images/宠问_65.png) no-repeat;
+}
+.box>.item10 {
+    width: 100%;
+    height: 930px;
+    background: url(../images/宠问_66.png) no-repeat;
+}

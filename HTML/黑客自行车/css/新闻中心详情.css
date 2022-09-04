@@ -1,0 +1,221 @@
+.box {
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg-cp.png) no-repeat 0 -350px/100%;
+}
+
+/* 头部  */
+header {
+    width: 100%;
+    height: 135px;
+    margin-top: 10px;
+    background-color: #283326;
+}
+header .container {
+    width: 1210px;
+    height: 100%;
+    margin: 0 auto;
+}
+header .container>.head-left {
+    width: 230px;
+    height: 100%;
+    background: url(../images/index-logo.png) no-repeat 0 0/100%;
+}
+header .container>nav {
+    width: 785px;
+    height: 100%;
+    padding-top: 80px;
+    padding-left: 130px;
+    color: #4f5122;
+}
+header .container>nav li {
+    padding: 0 27px;
+    border-right: 1px solid #4f5122;
+}
+header .container>nav li a {
+    color: #4f5122;
+}
+header .container>nav li:nth-child(3) {
+    background: url(../images/vuan.png) no-repeat 0 -10px/100%;
+}
+header .container>nav li:nth-child(3) a {
+    color: #d2d46c;
+}
+header .container>nav li:last-of-type {
+    border: 0;
+}
+header .container>.head-right {
+    width: 190px;
+    height: 100%;
+    padding-top: 45px;
+}
+header .container>.head-right>.head-r-top1 {
+    width: 100%;
+    position: relative;
+}
+header .container>.head-right>.head-r-top1 li a{
+    padding: 0 26px 0;
+    color: #4f5122;
+}
+header .container>.head-right>.head-r-top1 li a:last-of-type {
+    padding-right: 0;
+}
+header .container>.head-right>.head-r-bottom1 li {
+    margin-top: 10px;
+}
+header .container>.head-right>.head-r-bottom1 li a {
+    font-size: 14px;
+    color: #4f5122;
+}
+header .container>.head-right>.head-r-bottom1 li:last-of-type {
+    border-right: 1px solid #4f5122;
+}
+
+
+
+/* 主体 */
+main {
+    width: 100%;
+    height: 1000px;
+    padding-top: 100px;
+}
+main .container{
+    width: 1175px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: #88741b88;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 60px;
+    color: #faf8be;
+}
+main .container h2 {
+    text-align: center;
+}
+main .container .p-1 {
+    color: #9f9e9f;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+main .container .c-left1 {
+    padding-top: 30px;
+    width: 430px;
+    height: 425px;
+}
+main .container .c-left1 p {
+    text-indent: 2em;
+    font-size: 14.5px;
+    padding-top: 10px;
+}
+main .container .c-left2 {
+    width: 585px;
+    height: 445px;
+    margin-left: 30px;
+    background-color: #937b17;
+    border-radius: 10px;
+    position: relative;
+}
+main .container .c-left2 .le1 {
+    width: 360px;
+    height: 275px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: url(../images/ple.png) no-repeat 0 0/360px 275px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+main .container .c-left2 .le2 {
+    width: 315px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: url(../images/peo.png) no-repeat 0 0/315px 250px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+main .container .bottom {
+    width: 100%;
+    height: 50px;
+    text-indent: 2em;
+    font-size: 14.5px;
+    margin-top: 505px;
+}
+main .container .b123 {
+    width: 400px;
+    height: 36px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+main .container .b123 div {
+    width: 78px;
+    height: 100%;
+    color: black;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 36px;
+}
+
+main .container .b123 div:last-of-type {
+    background-color: #fdf87d;
+}
+main .container .b123 div:first-of-type {
+    background-color: #b59116;
+}
+
+
+
+/* 页尾 */
+footer {
+    width: 100%;
+    height: 150px;
+    padding-top: 20px;
+}
+footer .container {
+    width: 1210px;
+    height: 100%;
+    margin: 0 auto;
+    color: #5e5f20;
+}
+footer .container>.f-top1{
+    width: 525px;
+    height: 20px;
+    margin: 0 auto;
+}
+footer .container>.f-top1>ul>li {
+    width: 105px;
+    text-align: center;
+    border-right: 1px solid #5e5f20;
+}
+footer .container>.f-top1>ul>li:last-of-type {
+    border: 0;
+}
+footer .container>.f-top1>ul>li>a {
+    color: #5e5f20;
+}
+footer .container>.f-center1 {
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+footer .container>.f-center1>ul>li {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 5px;
+    border-right: 1px solid #5e5f20;
+}
+footer .container>.f-center1>ul>li:last-of-type {
+    border: 0;
+}
+footer .container>.f-bottom1 {
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 12px;
+}
