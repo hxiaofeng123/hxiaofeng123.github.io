@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>360浏览器案例</title>
+</head>
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="./swiper.min.css">
+<link rel="stylesheet" href="./360.css">
+
+<!-- Demo styles -->
+<style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="left">
+                <img src="./img/p2.png">
+            </div>
+            <div class="right">
+                <a href="#">论坛</a>
+                <a href="#">扩展</a>
+                <a href="#">Mac版</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="s1-container">
+                    <h1>畅快浏览 极致体验</h1>
+                    <h3>全新Chrome内核浏览器, 性能更强, 速度更快</h3>
+                    <div class="center">
+                        <button>32位版本</button>
+                        <button>64位版本</button>
+                        <p>New</p>
+                    </div>
+
+                    <img src="./img/p4.png">
+                    <img src="./img/p5.png">
+                    <img src="./img/p6.png">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <video autoplay loop>
+                    <source src="./video/vi1.mp4" type="video/mp4">
+                </video>
+                <div class="s-left">
+                    <h1>极速</h1>
+                    <div class="line"></div>
+                    <h2>全新Chromium内核</h2>
+                    <h5>性能强劲，快如闪电。</h5>
+                    <button>立刻体验</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <video autoplay loop>
+                    <source src="./video/vi2.mp4" type="video/mp4">
+                </video>
+                <div class="s-left">
+                    <h1>极速</h1>
+                    <div class="line"></div>
+                    <h2>暗夜炫黑模式</h2>
+                    <h5>定义酷，定义你。</h5>
+                    <button>立刻体验</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <video autoplay loop>
+                    <source src="./video/vi3.mp4" type="video/mp4">
+
+                </video>
+
+                <div class="s-left">
+                    <h1>极安全</h1>
+                    <div class="line"></div>
+                    <h2>DNS加密防劫持</h2>
+                    <h5>安全升级，肆意无忌。</h5>
+                    <button>立刻体验</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <video autoplay loop>
+                    <source src="./video/vi5.mp4" type="video/mp4">
+                </video>
+                <div class="s-left">
+                    <h1>极视界</h1>
+                    <div class="line"></div>
+                    <h2>4K高清视频播放</h2>
+                    <h5>还原真是之美，尽显万物本色。</h5>
+                    <button>立刻体验</button>
+                </div>
+
+                <div class="s-bottom">
+                    <div class="container">
+                        <p>Copyright © 2005-
+                            <script>var crdate = new Date; document.write(crdate.getFullYear())</script> 360.CN All Rights
+                            Reserved 360互联网安全中心 隐私政略 京ICP证080047号[京ICP备08010314号-6]
+                        </p>
+                        <p>网站举报电话：4006693600 举报邮箱： kefu@360.cn 互联网违法和不良信息举报中心： >https://www.12377.cn</p>
+                        <p>
+                            <img src="./img/p7.png">
+                            京公网安备 11000002000006号
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="./swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            direction: 'vertical',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 30,
+            mousewheelControl: true,
+        });
+
+        var swiper = new Swiper('.swiper-container',{
+		direction : 'vertical',
+		followFinger : false,
+		speed:800,
+		mousewheelControl : true,
+		pagination : '.swiper-pagination',
+		onInit:function(swiper){
+		    slide=swiper.slides.eq(0);
+			slide.addClass('a-slide');
+		},onTransitionStart: function(swiper){
+			for(i=0;i<swiper.slides.length;i++){
+				slide=swiper.slides.eq(i);
+			    slide.removeClass('a-slide');
+				}
+		},onTransitionEnd: function(swiper){
+				slide=swiper.slides.eq(swiper.activeIndex);
+			    slide.addClass('a-slide');
+				
+		},
+		
+		});
+    </script>
+</body>
+
+</html>

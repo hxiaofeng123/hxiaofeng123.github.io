@@ -1,0 +1,233 @@
+header {
+  width: 100%;
+  height: 60px;
+}
+header .container-fluid {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: blueviolet;
+  padding-top: 20px;
+  text-indent: 1rem;
+}
+main {
+  width: 100%;
+  height: 650px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+main .x-main-left {
+  height: 100%;
+  padding-top: 200px;
+  padding-left: 100px;
+}
+main .x-main-left p {
+  width: 80%;
+}
+main .x-main-left button {
+  width: 140px;
+  height: 30px;
+  font-size: 12px;
+  color: white;
+  background-color: orange;
+  border: 0;
+  border-radius: 2px;
+  margin-top: 50px;
+}
+main .x-main-right {
+  height: 650px;
+  background-image: url(slider-img.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+h3 {
+  text-align: center;
+  margin-top: 60px;
+}
+section {
+  width: 100%;
+  text-align: center;
+}
+section .container-fluid {
+  margin: 50px 200px;
+}
+section .container-fluid .x-section {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+section .container-fluid .x-section img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+section .container-fluid .x-section img:hover {
+  transform: scale(1.1);
+}
+section .container-fluid .row .x-p1 {
+  width: 100%;
+  font-size: 3px;
+}
+section .container-fluid .row a {
+  color: yellow;
+  font-size: 3px;
+  text-decoration: none;
+}
+nav {
+  width: 100%;
+  margin-top: 50px;
+  background-image: url(about-bg.png);
+  background-size: cover;
+  background-position: 0 0;
+  text-align: center;
+}
+nav .container-fluid .row .x-about {
+  display: flex;
+  justify-content: center;
+}
+nav .container-fluid .row .x-about img {
+  width: 50%;
+}
+nav .container-fluid .row .x-about p {
+  width: 60%;
+}
+nav .container-fluid .x-nav-r2 {
+  margin-top: 80px;
+}
+nav .container-fluid .row.x-nav-r3 {
+  margin-top: 30px;
+}
+nav .container-fluid .row.x-nav-r3 button {
+  border: 0;
+  font-size: 4px;
+  width: 10%;
+  padding: 5px 0;
+  color: white;
+  background-color: yellow;
+  transition: all 0.5s;
+}
+nav .container-fluid .row.x-nav-r3 button:hover {
+  color: yellow;
+}
+.main2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.main2 .container-fluid {
+  margin: 50px 200px;
+}
+.main2 .container-fluid .x-main2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 1px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main2 .container-fluid .x-main2 img {
+  width: 30%;
+  height: 30px;
+  filter: brightness(0) invert(83%) sepia(28%) saturate(1206%) hue-rotate(356deg) brightness(112%) contrast(92%);
+}
+.main2 .container-fluid .x-main2:hover {
+  background-color: yellow;
+}
+.main2 .container-fluid .x-main2:hover img {
+  filter: invert(1);
+}
+.main2 .container-fluid p {
+  font-size: 2px;
+}
+.main2 .container-fluid button {
+  border: 0;
+  font-size: 4px;
+  width: 20%;
+  padding: 5px 0;
+  color: white;
+  background-color: yellow;
+  transition: all 0.5s;
+  margin-top: 30px;
+}
+.main2 .container-fluid button:hover {
+  background-color: white;
+  border: 1px solid yellow;
+  color: yellow;
+}
+.main3 {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.main3 .container-fluid {
+  margin: 0 200px;
+}
+.main3 .container-fluid .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main3 .container-fluid .x-main3 {
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+  padding-bottom: 40px;
+}
+.main3 .container-fluid .x-main3-1 {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.main3 .container-fluid .x-main3-1 img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+.main3 .container-fluid .x-main3 p {
+  width: 80%;
+  margin: 0 10%;
+}
+.main3 .container-fluid .row.x-nav-r3 {
+  margin-top: 30px;
+}
+button {
+  width: 140px;
+  height: 30px;
+  border: 0;
+  font-size: 4px;
+  width: 10%;
+  padding: 5px 0;
+  color: white;
+  background-color: yellow;
+  transition: all 0.5s;
+}
+.main3 .container-fluid .row.x-nav-r3 button:hover {
+  color: yellow;
+  background-color: white;
+  border: 1px solid yellow;
+}
+footer {
+  margin-top: 50px;
+  width: 100%;
+  height: 200px;
+  background-color: darkviolet;
+}
+footer .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+footer .container-fluid h3 {
+  text-align: left;
+}
+footer .container-fluid p {
+  width: 200px;
+}
+/*# sourceMappingURL=./bos1.css.map */
