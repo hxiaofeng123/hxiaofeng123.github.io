@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .item .itemer {
+            width: 50%;
+            height: 50%;
+            background-color: rgba(0, 0, 255, .2);
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .zoom {
+            width: 800px;
+            height: 800px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            margin-left: 100px;
+        }
+
+        .zoom img {
+            width: 200%;
+            height: 200%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="item">
+        <img src="../img/练习轮播图/0002.jpg" alt="">
+        <div class="itemer"></div>
+    </div>
+    <div class="zoom">
+        <img src="../img/练习轮播图/0002.jpg" alt="">
+    </div>
+
+    <script>
+        var itemEle = document.getElementsByClassName('item')[0];
+        var itemerEle = itemEle.getElementsByClassName('itemer')[0];
+        var zoomEle = document.getElementsByClassName('zoom')[0].getElementsByTagName('img')[0];
+       zoomEle.style.opacity = '0';
+
+        itemEle.onmousemove = function (e) {
+            zoomEle.style.opacity = '1';
+
+            x = e.offsetX - 100;
+            y = e.offsetY - 100;
+            if (x > 200) {
+                x = 200;
+            }
+            if (x < 0) {
+                x = 0;
+            }
+            if (y > 200) {
+                y = 200;
+            }
+            if (y < 0) {
+                y = 0;
+            }
+            itemerEle.style.left = x + 'px';
+            itemerEle.style.top = y + 'px';
+            zoomEle.style.left = -4 * x + 'px';
+            zoomEle.style.top = -4 * y + 'px';
+        }
+        itemEle.onmouseout = function () {
+            zoomEle.style.opacity = '0';
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+        }
+
+        section {
+            width: 120px;
+            height: 120px;
+            font-size: 60px;
+            line-height: 120px;
+            display: flex;
+            padding: 10px;
+            color: white;
+            background-color: blue;
+        }
+
+        section div {
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            box-sizing: border-box;
+            border: 5px solid black;
+        }
+
+        section div span {
+            transition: all .3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <section class="hh">
+            <div class="em1">
+                <span>0</span>
+            </div>
+            <div class="em2">
+                <span>0</span>
+            </div>
+
+        </section>
+        <section class="mm">
+            <div class="em1">
+                <span>0</span>
+            </div>
+            <div class="em2">
+                <span>0</span>
+            </div>
+
+        </section>
+        <section class="ss">
+            <div class="em1">
+                <span>0</span>
+            </div>
+            <div class="em2">
+                <span>0</span>
+            </div>
+
+        </section>
+    </div>
+
+
+    <script>
+        function showSS(ele, n) {
+            //      var sNode = ss.getElementsByTagName('span')[0];
+            //     var s1Node=document.createElement('span');
+            //     s1Node.innerText = s[1];
+            //     sNode.style.marginTop = "-120px";
+            //     ss.append(s1Node);
+
+            //     setTimeout(function () {
+            //         ss.removeChild(sNode);
+            //   }, 300);
+            var sNode = ele.getElementsByTagName('span')[0];
+           
+            if (sNode.innerText !== n) {
+                var s1Node = document.createElement('span');
+                s1Node.innerText = n;
+                sNode.style.marginTop = "-120px";
+                ele.append(s1Node);
+
+                setTimeout(function () {
+                    ele.removeChild(sNode);
+                }, 300);
+            }
+
+        }
+        setInterval(function () {
+            var d = new Date();
+            var h = String(d.getHours()).padStart(2, "0");
+            var m = String(d.getMinutes()).padStart(2, "0");
+            var s = String(d.getSeconds()).padStart(2, "0");
+            var hh = document.querySelectorAll('section.hh div');
+            var mm = document.querySelectorAll('section.mm div');
+            var ss = document.querySelectorAll('section.ss div');
+            hh.forEach(function (ele, i) {
+                showSS(ele, h[i]);
+            })
+            mm.forEach(function (ele, i) {
+                showSS(ele, m[i]);
+            })
+
+            ss.forEach(function (ele, i) {
+                showSS(ele, s[i]);
+            })
+            // showSS(ss,s[1]);
+
+
+        }, 1000)
+    </script>
+</body>
+
+</html>

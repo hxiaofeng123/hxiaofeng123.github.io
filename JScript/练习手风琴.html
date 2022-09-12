@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(../img/手风琴/2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: top center;
+        }
+        .stem {
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            margin-top: 300px;
+            margin-left: -300px;
+            display: flex;
+        }
+        .stem div {
+            width: 70px;
+            height: 100%;
+            background-size: cover;
+            background-position: top center;
+        }
+        .stem div:nth-child(1) {
+            background-image: url(../img/手风琴/1.jpg);
+        }
+        .stem div:nth-child(2) {
+            width: 390px;
+            background-image: url(../img/手风琴/2.jpg);
+        }
+        .stem div:nth-child(3) {
+            background-image: url(../img/手风琴/3.jpg);
+        }
+        .stem div:nth-child(4) {
+            background-image: url(../img/手风琴/4.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="stem">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <script>
+        var imgs = document.querySelectorAll('.stem div');
+        var body =document.body;
+        
+        imgs.forEach(function (img, i) {
+        img.onclick = function () {
+          imgs.forEach(function (img1, index) {
+            if (index === i) {
+              img1.style.width = "390px";
+              body.style.backgroundImage = 'url(../img/手风琴/'+(index + 1 )+'.jpg)';
+            } else {
+              img1.style.width = "70px";
+            }
+          });
+        };
+      });
+    </script>
+</body>
+</html>
